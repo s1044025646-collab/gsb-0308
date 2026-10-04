@@ -1,0 +1,8 @@
+[
+  { "path": "app.log", "type": "file" },
+  { "path": "logs", "type": "dir" },
+  { "path": "logs/a.log", "type": "file" },
+  { "path": "logs/keep.log", "type": "file" },
+  { "path": "build", "type": "dir" },
+  { "path": "build/keep.txt", "type": "file" }
+]

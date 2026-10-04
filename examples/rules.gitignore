@@ -1,0 +1,4 @@
+# 示例规则
+*.log
+!logs/keep.log
+build/

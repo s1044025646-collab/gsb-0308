@@ -1,0 +1,20 @@
+{
+  "name": "gitignore-analyzer",
+  "version": "1.0.0",
+  "description": "离线 Gitignore 规则匹配与目录剪枝解释后端（API + CLI）",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --no-warnings=ExperimentalWarning dist/server.js",
+    "demo": "npm run build && node --no-warnings=ExperimentalWarning dist/demo.js",
+    "test": "tsc -p tsconfig.json && node --no-warnings=ExperimentalWarning --test dist/tests/matcher.test.js dist/tests/validation.test.js dist/tests/service.test.js dist/tests/gitcompat.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
