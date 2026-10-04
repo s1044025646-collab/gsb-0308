@@ -1,0 +1,22 @@
+{
+  "name": "gitignore-analyzer",
+  "version": "1.0.0",
+  "description": "离线 Gitignore 规则匹配与目录剪枝解释后端（API + CLI）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "gia": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test --test-reporter=spec \"dist/**/*.test.js\"",
+    "start": "node dist/cli.js serve",
+    "demo": "tsc -p tsconfig.json && node dist/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
